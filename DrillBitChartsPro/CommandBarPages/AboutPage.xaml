@@ -1,0 +1,41 @@
+﻿<Page
+    x:Class="DrillBitChartsPro.AboutPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:DrillBitChartsPro"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" MinHeight="200">
+        <Grid x:Name="LayoutRoot" Background="Transparent" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="10,17,0,28">
+                <TextBlock Text="Drill Bit Charts Pro" Margin="10,0" FontSize="20" FontFamily="Segoe WP"/>
+                <TextBlock Text="About" Margin="10,0,0,0" FontSize="28" FontFamily="Segoe UI Light" />
+            </StackPanel>
+
+            <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+                <ScrollViewer>
+                    <StackPanel Orientation="Vertical" d:LayoutOverrides="Height" VerticalAlignment="Top" Margin="12,30,0,0">
+                        <TextBlock Text="Version 2.0.1" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="24" />
+                        <TextBlock Text="Copyright © 2015 Don Stegall" FontSize="24" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0,10,0,0" />
+                        <TextBlock Text="All Rights Reserved" FontSize="24" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0,15,0,0" />
+                        <TextBlock TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="16" >
+<LineBreak/>Drill Bit Charts Pro is an ongoing project that will continue to get more enhancements and become available on more platforms including iPhone and iPad.
+<LineBreak/>
+<LineBreak/>It is currently available on Windows 10, Windows Phone 8.1, and Android. Look for <Bold>DrillBitChartsPro.com</Bold> which is in development.
+<LineBreak/>
+<LineBreak/>See the Coming Soon page for a list of Features coming soon to Drill Bit Charts Pro.
+                        </TextBlock>
+                    </StackPanel>
+                </ScrollViewer>
+            </Grid>
+        </Grid>
+    </Grid>
+
+</Page>

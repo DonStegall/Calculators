@@ -1,0 +1,68 @@
+﻿<Page
+    x:Class="DrillBitChartsPro.WoodscrewUSChartPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:DrillBitChartsPro"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    >
+
+    <Grid x:Name="LayoutRoot" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" SizeChanged="LayoutRoot_SizeChanged">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel Grid.Row="0" Margin="12,17,0,28" Grid.ColumnSpan="2">
+            <TextBlock Text="Drill Bit Charts Pro" Margin="12,0" FontSize="20" FontFamily="Segoe WP"/>
+            <TextBlock Name="txtPageName" Text="page name" Margin="12,0,0,0" FontSize="24" FontFamily="Segoe UI Light"/>
+
+        </StackPanel>
+
+        <ScrollViewer Name="scrollOuter" Grid.Column="0" Grid.Row="1" 
+                      HorizontalScrollMode="Enabled" 
+                      HorizontalScrollBarVisibility="Auto" 
+                      VerticalScrollMode="Disabled" 
+                      VerticalScrollBarVisibility="Hidden"
+                      Margin="12,0,12,12" SizeChanged="scrollOuter_SizeChanged" >
+
+            <Grid x:Name="gridOouterPanel">
+                
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+
+                <!--ContentPanel - place additional content here-->
+                <Grid x:Name="gridContentPanel" Grid.Row="0" Grid.ColumnSpan="2">
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="44"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid Name="gridHdr" Grid.Column="0" Grid.Row="0" Height="44"/>
+
+                    <ScrollViewer Name="scrollInner" Grid.Column="0" Grid.Row="2" 
+                                  VerticalScrollMode="Enabled" 
+                                  VerticalScrollBarVisibility="Auto" 
+                                  VerticalContentAlignment="Top" 
+                                  SizeChanged="scrollInner_SizeChanged"><!--SizeChanged="InnerScroll_SizeChanged"-->
+                        <Grid Name="gridRows"/>
+                    </ScrollViewer>
+
+                </Grid>
+
+            </Grid>
+        </ScrollViewer>
+    </Grid>
+
+</Page>

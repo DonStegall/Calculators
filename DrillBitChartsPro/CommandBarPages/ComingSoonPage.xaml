@@ -1,0 +1,53 @@
+﻿<Page
+    x:Class="DrillBitChartsPro.ComingSoonPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:DrillBitChartsPro"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" MinHeight="200">
+        <Grid x:Name="LayoutRoot" Background="Transparent" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="10,17,0,28">
+                <TextBlock Text="Drill Bit Charts Pro" Margin="10,0" FontSize="20" FontFamily="Segoe WP"/>
+                <TextBlock Text="Coming Soon" Margin="10,0,0,0" FontSize="28" FontFamily="Segoe UI Light" />
+            </StackPanel>
+
+            <Grid x:Name="ContentPanel" Grid.Row="1" Margin="10,-20,10,10">
+                <ScrollViewer>
+                    <StackPanel Orientation="Vertical" d:LayoutOverrides="Height" VerticalAlignment="Top" Margin="12,0,12,0">
+                        <TextBlock TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="16" >
+<LineBreak/>Drill Bit Charts Pro is an ongoing project that will continue to get more enhancements and become available on more platforms including iPhone and iPad.
+<LineBreak/>
+<LineBreak/>It is currently available on Windows 10, Windows Phone 8.1, and Android. Look for <Bold>DrillBitChartsPro.com</Bold> which is in development.
+<LineBreak/>
+<LineBreak/>Features coming soon to Drill Bit Charts Pro include:
+<LineBreak/>
+<LineBreak/>* Zooming of charts
+<LineBreak/>
+<LineBreak/>* Setting the font size used in the charts.
+<LineBreak/>
+<LineBreak/>* Color themes and control of colors in charts.
+<LineBreak/>
+<LineBreak/>* Many more charts.
+<LineBreak/>
+<LineBreak/>* Copy to clipboard.
+<LineBreak/>
+<LineBreak/>* Closest drill help.
+<LineBreak/>
+<LineBreak/>* A lot more.
+
+                        </TextBlock>
+                    </StackPanel>
+                </ScrollViewer>
+            </Grid>
+        </Grid>
+    </Grid>
+
+</Page>
